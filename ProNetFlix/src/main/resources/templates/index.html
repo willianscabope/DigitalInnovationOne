@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html lang=”pt-br” xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<link th:href="@{style/main.css}" rel="stylesheet" />
+<link th:href="@{style/responsivel.css}" rel="stylesheet" />
+
+<!-- Carrosel do WolCarousel2 CSS-->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+	integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+	integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<title>NetFlix Clone</title>
+
+</head>
+
+<body>
+
+	<header>
+
+		<div class="conteiner_cabe">
+
+			<h2 class="logo">NETFLIX</h2>
+
+			<nav>
+				<a href="">Inicio</a><a href="">Séries</a><a href="">Filmes</a><a
+					href="">Documentários</a>
+			</nav>
+
+		</div>
+
+	</header>
+	<main>
+
+		<div class="filme-principal">
+
+			<div class="conteiner">
+
+				<h3 class="titulo">HOUSE OF CARDS</h3>
+
+				<p class="descricao">Nada pode impedir o políticos sem
+					escrúpulos Frank Underwood de conquistar Washington.</p>
+
+				<div class="botoes">
+					<button role="button" class="botao" onclick="">
+						<i class="fas fa-play"></i> ASSISTIR AGORA
+					</button>
+					<button role="button" class="botao"
+						onclick="window.location.href='https://www.globo.com';">
+						<i class="fas fa-info-circle"></i> MAIS INFORMAÇÕES
+					</button>
+				</div>
+
+			</div>
+
+
+		</div>
+
+
+	</main>
+
+	<div class="carrosel_filmes">
+
+
+		<div class="owl-carousel owl-theme">
+
+			<div class="item box-filme">
+				<img th:src="@{img/mini1.jpg}">
+			</div>
+			<div class="item box-filme">
+				<img th:src="@{img/mini2.jpg}">
+			</div>
+			<div class="item box-filme">
+				<img th:src="@{img/mini3.jpg}">
+			</div>
+			<div class="item box-filme">
+				<img th:src="@{img/mini4.jpg}">
+			</div>
+			<div class="item box-filme">
+				<img th:src="@{img/mini5.jpg}">
+			</div>
+			<div class="item box-filme">
+				<img th:src="@{img/mini6.jpg}">
+			</div>
+			<div class="item box-filme">
+				<img th:src="@{img/mini7.jpg}">
+			</div>
+
+
+		</div>
+
+	</div>
+
+
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+		integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+		integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script th:src="@{https://kit.fontawesome.com/ca827fc95e.js}"
+		crossorigin="anonymous"></script>
+
+
+	<script type="text/javascript">
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:5,
+    nav:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+</script>
+
+</body>
+</html>

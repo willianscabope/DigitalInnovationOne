@@ -1,0 +1,131 @@
+@charset "UTF-8";
+:root{
+	--vermelho:#E50914;
+	--preta:#141414;
+}
+/*remover espaçamento*/
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;	
+}
+
+/* Inicio Cabecario---------------------------------------------------------------------------- */
+
+body {
+	background-color: var(--preta);
+	font-family: "Times New Roman",Times,serif;
+	color:#eeeeec;
+}
+
+
+
+header .conteiner_cabe{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	/*border: 1px solid black;*/
+}
+
+header .logo{
+	color: var(--vermelho);
+	margin-left: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 60px;
+}
+
+header nav a{
+	font-weight: bold;
+	text-decoration: none;
+	color: #AAA;
+	margin-right: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header nav a:hover {
+	color:#FFF;
+}
+
+/* Fim Cabecario------------------------------------------------------------ */
+
+
+
+
+
+/* Inicio Miolo Principal------------------------------------------------------------- */
+
+.filme-principal{
+	font-size: 16px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)100%), url("../img/capa-house.jpg");
+	height: 500px;
+	background-size: cover;
+	display: flex ;
+	flex-direction:column;
+	justify-content: center;
+	align-items: flex-start; 
+	
+}
+
+.filme-principal .conteiner .descricao{
+	margin-bottom: 30px;
+	
+}
+
+
+
+.titulo{
+		font-size: 40px;
+	}
+
+.descricao{
+	font-size: 20px;
+}
+
+.botao{
+	
+	background-color: rgba(0,0,0,0.50);
+	border: none;
+	color: white;
+	padding: 15px 30px;
+	
+	
+}
+.botao:hover {
+  background-color: white;
+  color: black;
+  transition: 1s ease all;
+}
+
+.botao i{
+	
+	margin-right: 8px;
+}
+
+.conteiner{
+	margin-left: 20px;
+}
+
+
+.filme-principal .conteiner{
+	width: 70%;
+}
+
+/* Fim Miolo Principal----------------------------------------------------------------- */
+
+
+/* Inicio do carroceu ---------------------------------------------------------------- */
+
+.box-filme {
+	height: 10%;
+	width: 100%;
+	display: block;
+}
+
+.carrosel_filmes{
+	
+	margin-top: 5px
+}
+

@@ -1,0 +1,27 @@
+@media screen and (max-width: 750px){
+	
+	header .conteiner_cabe{
+	display:flex;
+	flex-direction: colum;
+	align-items: center;
+	justify-content: space-between;
+	
+	}
+	
+	.botao{
+	
+	margin-top: 5px;
+	width: 150px;
+	height: 80px
+	}
+	
+	
+}
+
+@media screen and (min-width: 750px){
+	
+	.descricao{
+	width: 50%;
+	}
+	
+	}
